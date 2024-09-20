@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Bebas";
+    src: url('assets/bebas.ttf') format('truetype');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 100px;
+    padding: 3rem;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.site-owner {
+    font-family: "Bebas", sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.image-owner {
+    font-size: small;
+    color: bisque;
+}
+
+.form-section {
+    height: 50vh;
+    flex: 2;
+}
+
+
+
