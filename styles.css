@@ -7,6 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
+    overflow: hidden;
 }
 
 .flex-container {
@@ -14,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 100px;
+    gap: 50px;
     padding: 3rem;
 }
 
@@ -23,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 50%;
     background-image: url(assets/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,9 +45,66 @@ body {
 }
 
 .form-section {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    gap: 12px;
     flex: 2;
 }
 
 
+.header-text {
+    font-size: x-large;
+    font-weight: 600;
+    align-self: center;
+    margin-bottom: -12px;
+}
+
+.form-container {
+    font-size: x-large;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 80px;
+}
+
+.input-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+input {
+    height: 32px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 10px;
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 12px;
+    background-color: #056254;
+    color: white;
+    font-size: small;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+a {
+    text-decoration: none;
+    color: #056254;
+    font-weight: bold;
+}
 
