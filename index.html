@@ -9,8 +9,10 @@
 <body>
     <div class="flex-container">
         <div class="logo-section">
-            <div class="site-owner">Philipp Arbeitstein</div>
-            <div class="image-owner">Image by Tsukada Kazuhiro</div>
+            <div class="logo-banner">
+                <div class="site-owner">Philipp Arbeitstein</div>
+                <div class="image-owner">Image by Tsukada Kazuhiro</div>
+            </div>
         </div>
         <div class="form-section">
             <div class="header-text">
@@ -25,27 +27,33 @@
                         <div class="form-flex-container">
                             <div class="input-container">
                                 <label for="firstname">First Name</label>
-                                <input type="text" id="firstname">
+                                <input type="text" id="firstname" required>
+                                <span class="error-message" aria-live="polite">First name is required.</span>
                             </div>
                             <div class="input-container">
                                 <label for="lastname">Last Name</label>
-                                <input type="text" id="lastname">
+                                <input type="text" id="lastname" required>
+                                <span class="error-message" aria-live="polite">Last name is required.</span>
                             </div>
                             <div class="input-container">
                                 <label for="email">Email</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
+                                <span class="error-message" aria-live="polite">Email is required of form jon.doe@gmail.com.</span>
                             </div>
                             <div class="input-container">
                                 <label for="phone">Phone Number</label>
-                                <input type="text" id="phone">
+                                <input type="text" id="phone" required>
+                                <span class="error-message" aria-live="polite">Phone Number is required of form +xxx.</span>
                             </div>
                             <div class="input-container">
                                 <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" required>
+                                <span class="error-message" aria-live="polite">Password requires a minimum length of 8 characters.</span>
                             </div>
                             <div class="input-container">
                                 <label for="confirm-password">Confirm Password</label>
-                                <input type="password" id="confirm-password">
+                                <input type="password" id="confirm-password" required>
+                                <span class="error-message" aria-live="polite">Passwords do not match.</span>
                             </div>
                         </div>
                         <hr style="width: 100%; opacity: 0.1;">

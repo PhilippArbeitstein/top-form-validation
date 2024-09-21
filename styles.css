@@ -33,6 +33,12 @@ body {
     flex: 1;
 }
 
+.logo-banner {
+    width: 100%;
+    background-color: rgba(190, 197, 189, 0.4);
+    text-align: center;
+}
+
 .site-owner {
     font-family: "Bebas", sans-serif;
     font-size: xx-large;
@@ -86,9 +92,46 @@ label {
 
 input {
     height: 32px;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    border: 1px solid rgba(128, 128, 128, 0.2); /* Neutraler grauer Rand */
     border-radius: 6px;
+    transition: border 0.3s ease; /* Sanfter Übergang für Randänderungen */
 }
+
+input {
+    height: 32px;
+    border: 1px solid rgba(128, 128, 128, 0.2); /* Neutraler grauer Rand */
+    border-radius: 6px;
+    transition: border 0.3s ease; /* Sanfter Übergang für Randänderungen */
+}
+
+.error-message {
+    display: none;
+    color: #d30c34; /* Red text for errors */
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+input:valid {
+    border: 1px solid #056254;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid rgba(128, 128, 128, 0.2); /* Neutraler grauer Rand */
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:not(:focus):invalid + .error-message {
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+    margin-top: 4px;
+}
+
 
 button {
     margin-top: 10px;
